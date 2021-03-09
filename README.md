@@ -12,5 +12,9 @@
  
 2. train metric network
 
-python3 train_baseline.py --method GNN --dataset cub --testset TESTSET --name metric_TESTSET_METHOD --warmup PRETRAIN --train_aug
-dataset：miniImagenet, cars, cub, places, or plantae 
+python3 train_baseline.py --method GNN --dataset miniImagenet --testset TESTSET --name metric_TESTSET_METHOD --warmup PRETRAIN --train_aug
+TESTSET：miniImagenet, cars, cub, places, or plantae 
+
+3. test
+
+python3 test.py --method GNN --name metric_TESTSET_METHOD --dataset TESTSET
